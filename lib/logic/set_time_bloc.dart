@@ -13,5 +13,14 @@ class SetTimeBloc extends Bloc<SetTimeEvent, SetTimeState> {
     on<DecSetTimeEvent>((event, emit) {
       emit(DecSetTimeState(state.time)..changeTime());
     });
+    on<PresetOneHoursEvent>((event, emit) {
+      emit(PresetOneHoursState(state.time)..changeTime());
+    });
+    on<PresetTwoHoursEvent>((event, emit) {
+      emit(PresetTwoHoursState(state.time)..changeTime());
+    });
+    on<PresetTreeHoursEvent>((event, emit) {
+      emit(PresetTreeHoursState(state.time)..changeTime());
+    });
   }
 }

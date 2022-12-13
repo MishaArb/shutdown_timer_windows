@@ -23,7 +23,7 @@ void main() async {
 
   doWhenWindowReady(() {
     final win = appWindow;
-    const initialSize = Size(800, 300);
+    const initialSize = Size(700, 300);
     win.minSize = initialSize;
     win.maxSize = initialSize;
     win.size = initialSize;

@@ -5,6 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:timer_count_down/timer_controller.dart';
 
 import '../logic/timer_mode_bloc.dart';
+import '../widgets/preset_time_widget.dart';
 import '../widgets/shutdown_mods_widgets.dart';
 import '../widgets/text_shutdown_modes_widget.dart';
 import '../widgets/timer_widget.dart';
@@ -37,14 +38,13 @@ class MainScreen extends StatelessWidget {
               }
             },
           ),
+          PresetTimeWidget(),
           ShutdownModesWidget(controller: _controller,),
         ],
       ),
     );
   }
 }
-
-
 
 
 
